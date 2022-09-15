@@ -4,10 +4,6 @@
  *
  * @n: character to return
  *
- * @i: rows
- *
- * @j: coloumns
- *
  * Return: Success
  */
 void print_diagonal(int n)

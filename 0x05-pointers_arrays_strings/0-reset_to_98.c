@@ -2,7 +2,7 @@
 /**
  * reset_to_98 - to bring it back to 98
  *
- * @*n: the name of the pointer
+ * @n: the name of the pointer
  *
  * Return: Success
  */

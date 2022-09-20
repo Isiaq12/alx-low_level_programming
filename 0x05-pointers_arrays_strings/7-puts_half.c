@@ -2,7 +2,7 @@
 #include "2-strlen.c"
 
 /**
- * put_half - prints the last half of a string
+ * puts_half - prints the last half of a string
  * @str: string name
  *
  * Return: Success

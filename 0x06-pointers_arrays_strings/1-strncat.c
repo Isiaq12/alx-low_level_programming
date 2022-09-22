@@ -9,6 +9,7 @@
  * @src: source string
  *
  * @n: particular character to join
+ * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
@@ -16,7 +17,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	s1 = _strlen(dest);
 
-	for (i = 0 ; i <= src[n] ; i++)
+	for (i = 0 ; i < n && src[i] != 0 ; i++)
 	{
 		dest[s1 + i] = src[i];
 	}

@@ -25,7 +25,7 @@ int guess(int a, int b)
  */
 int _sqrt_recursion(int n)
 {
-	if(n == 0)
+	if (n == 0)
 		return (0);
 	return (guess(1, n));
 }

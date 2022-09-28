@@ -15,7 +15,7 @@ int pcheck(int a, int b)
 	else if (a > b / 2)
 		return (1);
 	else
-		return(pcheck(a + 1, b));
+		return (pcheck(a + 1, b));
 }
 
 /**

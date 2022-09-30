@@ -11,6 +11,12 @@
  */
 int main(int argc, __attribute__((unused)) char *argv[])
 {
-	printf("%d\n", argc);
+	int i, aggr;
+
+	for (i = 0; i < argc ; i++)
+	{
+		aggr = i;
+	}
+	printf("%d\n", aggr);
 	return (0);
 }

@@ -3,9 +3,9 @@
 /**
  * main - check the code
  *
- * @argc - argument count
+ * @argc: argument count
  *
- * @argv - argument string passed
+ * @argv: argument string passed
  *
  * Return: Always (0) success
  */

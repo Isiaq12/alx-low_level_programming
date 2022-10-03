@@ -28,10 +28,9 @@ char *_strdup(char *str)
 	{
 		return ('\0');
 	}
-	while (str[i] < size)
+	for (i = 0; i < size; i++)
 	{
 		s[i] = str[i];
-		i++;
 	}
 	s[i] = '\0';
 	return (s);

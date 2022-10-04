@@ -9,7 +9,7 @@
  *
  * Return: NULL on failure OR return NULL if width or height is 0 or negative
  */
-int **alloc_grid(int width, int height);
+int **alloc_grid(int width, int height)
 {
 	int i;
 	int j;
@@ -24,7 +24,7 @@ int **alloc_grid(int width, int height);
 	if (A == NULL)
 	{
 		free(A);
-		return('\0');
+		return ('\0');
 	}
 	for (i = 0; i < height; i++)
 	{
@@ -32,9 +32,9 @@ int **alloc_grid(int width, int height);
 		if (A[i] == NULL)
 		{
 			for (f = i; f >= 0; f--)
-				free (A[f]);
-			free (A);
-			return('\0');
+				free(A[f]);
+			free(A);
+			return ('\0');
 		}
 		for (j = 0; j < width; j++)
 			A[i][j] = 0;

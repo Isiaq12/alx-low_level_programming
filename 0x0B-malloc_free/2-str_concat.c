@@ -14,8 +14,9 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *concat;
-	unsigned int i, k;
-	unsigned int len1, len2;
+	int i, k;
+	int len1;
+	int len2 = 1;
 	int total;
 
 	if (s1 == NULL)
@@ -36,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 		len2++;
 		k++;
 	}
-	total = (len2 + len1);
+	total = len2 + len1;
 	concat = malloc(sizeof(*s1) * total);
 	if (concat == NULL)
 	{

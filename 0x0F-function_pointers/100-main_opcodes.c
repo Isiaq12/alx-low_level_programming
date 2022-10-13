@@ -22,7 +22,8 @@ int main(int argc, char *argv[])
 			exit(2);
 		}
 		for (i = 0; i < kunle; i++)
-			printf("%02x%c", (unsigned char)*((char *)prog + i), i < kunle - 1 ? ' ' : '\n');
+			printf("%02x%c", (unsigned char)*((char *)prog + i),
+					i < kunle - 1 ? ' ' : '\n');
 	}
 	else
 	{

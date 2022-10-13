@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include"3-op_function.c"
 #include"3-calc.h"
 
 /**

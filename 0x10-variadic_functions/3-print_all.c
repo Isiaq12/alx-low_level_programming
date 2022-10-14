@@ -70,6 +70,11 @@ void (*get_func(char identifier, struct format_struct *fmt_arr))(va_list *)
 	return (fmt_arr[i].fmt_print_func);
 }
 
+/**
+ * print_char - prints a char
+ * @arg: pointer to a char
+ */
+
 void print_char(va_list *arg)
 {
 	printf("%c", va_arg(*arg, int));

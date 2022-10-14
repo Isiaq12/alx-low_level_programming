@@ -15,16 +15,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list kunle;
 	int x;
 
-	if (separator == NULL)
-	{
-		printf(" ");
-	}
 	va_start(kunle, n);
 	for (i = 0; i < n; i++)
 	{
 		x = va_arg(kunle, int);
 		printf("%d", x);
-		if (i < (n - 1))
+		if (separator != NULL && i < (n - 1))
 		{
 			printf("%s", separator);
 		}
